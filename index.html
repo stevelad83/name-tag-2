@@ -1,39 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>Web App</title>
+        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <!-- see https://fonts.google.com/ -->
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <!-- add link for page specific css -->
+    </head>
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
+    <body>
+        <header>
+            <h1>Welcome to Ben, Steve and Grey's Name Tag Maker!</h1>
+        </header>
 
-</head>
+        <main>
+            <section id="top">
+                <h1>Hello!</h1>
+                <h2>My name is...</h2>
+            </section>
 
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
+            <section id="middle"></section>
 
-    <main>
+            <section id="bottom"></section>
 
-    </main>
+            <section id="input">
+                <label>What's your name?</label>
+                <input type="text" id="name-input" />
+                <br />
+                <label>What color would you like?</label>
+                <select>
+                    <option>Red</option>
+                    <option>Orange</option>
+                    <option>Yellow</option>
+                    <option>Green</option>
+                    <option>Blue</option>
+                    <option>Purple</option>
+                </select>
+            </section>
 
-</body>
-
+            <section>
+                <button id="buttonInput">Submit</button>
+            </section>
+        </main>
+    </body>
 </html>
